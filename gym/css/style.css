@@ -1,0 +1,158 @@
+/* ===== Reset ===== */
+* {margin:0; padding:0; box-sizing:border-box}
+
+/* ===== القاعدة العامة ===== */
+body {
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  background:#fffdf9; color:#333; line-height:1.6;
+}
+h1,h2,h3 {color:#8b6b9e; margin-bottom:10px}
+a {text-decoration:none; color:#8b6b9e; transition:0.3s}
+a:hover {color:#d36b8b}
+
+/* ===== الهيدر ===== */
+header {
+  background:#d8bfd8; color:#fff; text-align:center;
+  padding:20px; border-bottom:4px solid #e9c9d7;
+}
+header h1 {margin:0; font-size:2rem }
+nav ul {
+  list-style:none;display:flex; flex-wrap:wrap;
+  justify-content:center; gap:10px; margin-top:15px; padding:0;
+}
+nav ul li a {
+  padding:6px 14px; background:#fff; color:#8b6b9e;
+  border-radius:18px; font-size:0.9rem;
+}
+ nav ul li a:hover {background: #f3b5c4;color:#fff}
+
+/* ===== المحتوى ===== */
+.content {display:grid; grid-template-columns:3fr 1fr; gap:20px; padding:20px}
+section,aside {
+  background:#fff; padding:15px; border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.07);
+}
+aside {background:#fdf2f5}
+
+/* ===== الأزرار ===== */
+button {
+  background:#8b6b9e; color:#fff; border:none;
+  padding:8px 18px; border-radius:20px; cursor:pointer;
+  font-size:0.95rem; transition:0.3s;
+}
+button:hover {background:#d36b8b}
+
+/* ===== برامج ===== */
+.programs-container {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px; margin:30px 0;
+}
+.program-card {
+  background:#fffafc; border:1px solid #ddd; border-radius:12px;
+  padding:15px; text-align:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1); transition:.3s;
+}
+.program-card:hover {transform:translateY(-6px); box-shadow:0 8px 18px rgba(0,0,0,0.2)}
+.program-card img {
+  width:100%; height:200px; object-fit:cover;
+  border-radius:10px; border-bottom:3px solid #f3b5c4;
+  cursor:pointer; transition:.3s;
+}
+.program-card img:hover {transform:scale(1.05)}
+.program-card h3 {margin:10px 0; color:#6a4c93}
+
+/* جدول البرامج */
+.program-table {width:100%; border-collapse:collapse; margin-top:20px}
+.program-table th {
+  background:#d7c0d0; color:#fff; padding:12px;
+}
+.program-table td {
+  border:1px solid #ddd; padding:10px; text-align:center;
+}
+.program-table tr:nth-child(even){background:#fdf2f5}
+
+/* ===== المدربون ===== */
+.trainers-container {
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px; margin-top:20px;
+}
+.trainer-card {
+  background:#fff; border-radius:12px; padding:20px; text-align:center;
+  box-shadow:0 3px 8px rgba(0,0,0,0.08); transition:.3s;
+}
+.trainer-card:hover {background:#fdf2f5; transform:translateY(-6px); box-shadow:0 6px 15px rgba(0,0,0,0.15)}
+.trainer-card h3 {margin:10px 0 5px; color:#6a4c93; font-size:1.2rem}
+.trainer-card p {margin:0 0 10px; color:#555; font-weight:bold}
+.trainer-card ul {
+  list-style:disc; padding-left:20px; text-align:left; color:#444; font-size:0.95rem;
+}
+.trainer-card ul li {margin:6px 0; transition:color .3s}
+.trainer-card ul li:hover {color:#d36b8b}
+
+/* ===== الحساب ===== */
+form {display:grid; gap:8px; margin-bottom:15px}
+input[type=text],input[type=email],input[type=password] {
+  padding:8px; border:1px solid #ccc; border-radius:6px;
+}
+input[type=radio],input[type=checkbox]{margin-right:6px}
+
+/* Aside Contact */
+aside p {margin:10px 0; font-size:.95rem; display:flex; align-items:center; gap:8px}
+aside i {color:#d36b8b}
+aside a {color:#8b6b9e; text-decoration:none; transition:.3s;}
+aside a:hover {color:#d36b8b; font-weight:bold}
+
+/* ===== الفوتر ===== */
+footer {
+  background:#8b6b9e; color:#fff; text-align:center;
+  padding:12px; margin-top:25px; font-size:0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media(max-width:768px){
+  .content{grid-template-columns:1fr}
+  nav ul{flex-direction:column; gap:5px}
+  form.contact-form p{flex-direction:column; align-items:flex-start}
+  form.contact-form input,form.contact-form textarea,form.contact-form select,
+  form.contact-form button{width:100%}
+  aside{margin-top:20px}
+}
+@media(max-width:480px){header h1{font-size:1.5rem}}
+
+/* Custom Modal Colors */
+.modal-header-custom1 {
+  background-color: #a86b8c;
+  color: #ffffff;
+}
+
+.modal-btn-custom1 {
+  background-color: #a86b8c;
+  color: #ffffff;
+  border: none;
+}
+
+.modal-btn-custom1:hover {
+  background-color: #884b70;
+  color: #ffffff;
+}
+
+.btn-style-modle {
+  background-color: #884b70;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-style-modle:hover {
+  background-color: #6a3957;
+  color: #ffffff;
+}
+
+.features ul {
+  list-style-type: none;
+}
+
+#about-ul{
+
+  padding-left: 15px;
+}
+

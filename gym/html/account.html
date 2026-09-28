@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - Girls Gym</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Toastify CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+  
+</head>
+<body>
+  <header>
+    <h1>Member Account</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Login</h2>
+       <form id="Loginform">
+        <label for="youremail">your email</label>
+        <input type="email" id="youremail" placeholder="enter your email">
+        <label for="your password">your password</label>
+        <input type="password" id="yourpassword" placeholder="enter your password">
+         <button type="submit" class="btn text-white mt-3" style="background-color: #a86b8c;">Login</button>
+       </form>
+
+      <h2>Create Account</h2>
+      <form id="registerForm">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter full name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label for="newpassword">Password</label>
+        <input type="password" id="newpassword" placeholder="Enter password">
+
+        <p>Choose Membership Type:</p>
+        <label><input type="radio" name="membership" value="basic"> Basic</label>
+        <label><input type="radio" name="membership" value="premium"> Premium</label>
+        <label><input type="radio" name="membership" value="vip"> VIP</label>
+
+        <button type="submit" class="btn text-white mt-3" style="background-color: #a86b8c;">Register</button>
+      </form>
+    </section>
+
+    <aside>
+      <h3>Account Info</h3>
+      <p>Login to your account or register to join our gym programs.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Girls Gym</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+  <script src="../js/java.js"></script> 
+   
+</body>
+</html>
